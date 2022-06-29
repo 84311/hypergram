@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.draw_container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: space-between;
+}
+
+#draw_area {
+  align-self: center;
+  margin: auto;
+}
+
+#options {
+  background-color: #95b8d1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#options > * {
+  width: 75%;
+}
+
+#options label {
+  text-align: center;
+}
+
+#file-input {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+#file-input + label {
+  background-color: #edafb8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 16px 32px;
+  display: inline-block;
+  transition-duration: 0.1s;
+  cursor: pointer;
+
+}
+
+#file-input:focus + label,
+#file-input + label:hover {
+  background-color: #fae7ea;
+}
+
+#file-input:focus + label {
+  outline: -webkit-focus-ring-color auto 5px;
+}
+
+#file-input + label * {
+  pointer-events: none;
+}
+
+#color_options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 0;
+}
+
+#color_options * {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+#save-button {
+  background-color: #666a86;
+  font-size: 1em;
+  font-weight: 700;
+  border: none;
+  border-radius: 4px;
+  padding: 16px 32px;
+  display: inline-block;
+  transition-duration: 0.1s;
+  cursor: pointer;
+}
+
+#save-button:hover {
+  background-color: #d1d2db;
+}

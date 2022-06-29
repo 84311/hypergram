@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hypergram</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<div class="draw_container">
+  <canvas id="draw_area"></canvas>
+  <div id="options">
+    <input accept="image/*" id="file-input" name="file-input" type="file">
+    <label for="file-input">UPLOAD FILE</label>
+    <div id="color_options">
+      <label for="brightness">Brightness</label>
+      <input id="brightness" max="255" min="-255" step="1" type="range">
+
+      <label for="contrast">Contrast</label>
+      <input id="contrast" max="128" min="-128" step="1" type="range">
+
+      <label for="transparent">Transparent</label>
+      <input id="transparent" max="1" min="0" step="0.1" type="range" value="1">
+    </div>
+    <button id="save-button">SAVE IMAGE</button>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
